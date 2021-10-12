@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProAudioSystemCode
 {
-    public class ProccessMain
+    public class Procces_Main
     {
     }
 }
