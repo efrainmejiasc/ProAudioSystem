@@ -21,9 +21,12 @@ namespace ProAudioSystem
         private void MainFormApp_Load(object sender, EventArgs e)
         {
             var process = new Procces_Main();
-            process.CreateDirectoryPublic();
-            process.CreateFilePublic();
-            process.GetMacAddress();
+            var mensaje = process.ComprobarInstalacion();
+            if (mensaje != string.Empty)
+            {
+                MessageBox.Show(mensaje, "INFORMACION DEL SISTEMA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Application.Exit();
+            }
         }
     }
 }
