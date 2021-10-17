@@ -13,7 +13,9 @@ namespace ProAudioSystemCode
         public string ComprobarInstalacion()
         {
             var result = string.Empty;
+            var noPermitido = "Existen conflictos en la configuracion de Pro Audio System, puede ser que este intentando usar la aplicacion sin los permisos nesesarios";
             var resultado = false;
+
             try
             {
                 var existeClave = EngineInstall.ExistsClaveRegWin();
@@ -30,7 +32,7 @@ namespace ProAudioSystemCode
                 }
                 else if (!existeClave && existeCarpeta) // no permitido
                 {
-                    result = "Existen conflictos en la configuracion, puede ser que este intentando usar la aplicacion sin los permisos nesesarios";
+                    result = noPermitido;
                 }
                 else if (existeClave && !existeCarpeta) // crear carpeta
                 {
@@ -42,12 +44,12 @@ namespace ProAudioSystemCode
                         resultado = EngineFile.CreateAndWriteFile(path + @"\WPAS\wpas.txt", mac);
                     }
                     else
-                        result = "Existen conflictos en la configuracion, puede ser que este intentando usar la aplicacion sin los permisos nesesarios";
+                        result = noPermitido;
                 }
                 else if (existeClave && existeCarpeta) // comparacion
                 {
                     var mac = EngineInstall.GetMacAddress();
-                    result = (mac == EngineFile.ReadFile(path + @"\WPAS\wpas.txt")) ? string.Empty : "Existen conflictos en la configuracion, puede ser que este intentando usar la aplicacion sin los permisos nesesarios";
+                    result = (mac == EngineFile.ReadFile(path + @"\WPAS\wpas.txt")) ? string.Empty : noPermitido;
                 }
             }
             catch(Exception ex)
