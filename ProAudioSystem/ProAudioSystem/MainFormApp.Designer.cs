@@ -48,9 +48,9 @@ namespace ProAudioSystem
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(188, 198);
+            this.pictureBox1.Location = new System.Drawing.Point(220, 167);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(359, 228);
+            this.pictureBox1.Size = new System.Drawing.Size(657, 267);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -60,9 +60,9 @@ namespace ProAudioSystem
             this.Baby.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Baby.FlatAppearance.BorderSize = 0;
             this.Baby.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Baby.Location = new System.Drawing.Point(48, 79);
+            this.Baby.Location = new System.Drawing.Point(236, 78);
             this.Baby.Name = "Baby";
-            this.Baby.Size = new System.Drawing.Size(66, 56);
+            this.Baby.Size = new System.Drawing.Size(46, 40);
             this.Baby.TabIndex = 1;
             this.Baby.UseVisualStyleBackColor = true;
             this.Baby.Click += new System.EventHandler(this.Baby_Click);
@@ -73,9 +73,9 @@ namespace ProAudioSystem
             this.Wallet.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Wallet.FlatAppearance.BorderSize = 0;
             this.Wallet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Wallet.Location = new System.Drawing.Point(144, 79);
+            this.Wallet.Location = new System.Drawing.Point(332, 78);
             this.Wallet.Name = "Wallet";
-            this.Wallet.Size = new System.Drawing.Size(66, 56);
+            this.Wallet.Size = new System.Drawing.Size(46, 40);
             this.Wallet.TabIndex = 2;
             this.Wallet.UseVisualStyleBackColor = true;
             this.Wallet.Click += new System.EventHandler(this.Wallet_Click);
@@ -86,9 +86,9 @@ namespace ProAudioSystem
             this.Keys.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Keys.FlatAppearance.BorderSize = 0;
             this.Keys.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Keys.Location = new System.Drawing.Point(240, 79);
+            this.Keys.Location = new System.Drawing.Point(428, 78);
             this.Keys.Name = "Keys";
-            this.Keys.Size = new System.Drawing.Size(66, 56);
+            this.Keys.Size = new System.Drawing.Size(46, 40);
             this.Keys.TabIndex = 3;
             this.Keys.UseVisualStyleBackColor = true;
             this.Keys.Click += new System.EventHandler(this.Keys_Click);
@@ -99,9 +99,9 @@ namespace ProAudioSystem
             this.Car.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Car.FlatAppearance.BorderSize = 0;
             this.Car.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Car.Location = new System.Drawing.Point(336, 79);
+            this.Car.Location = new System.Drawing.Point(524, 78);
             this.Car.Name = "Car";
-            this.Car.Size = new System.Drawing.Size(66, 56);
+            this.Car.Size = new System.Drawing.Size(46, 40);
             this.Car.TabIndex = 4;
             this.Car.UseVisualStyleBackColor = true;
             this.Car.Click += new System.EventHandler(this.Car_Click);
@@ -112,9 +112,9 @@ namespace ProAudioSystem
             this.C9munication.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.C9munication.FlatAppearance.BorderSize = 0;
             this.C9munication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.C9munication.Location = new System.Drawing.Point(432, 79);
+            this.C9munication.Location = new System.Drawing.Point(620, 78);
             this.C9munication.Name = "C9munication";
-            this.C9munication.Size = new System.Drawing.Size(66, 56);
+            this.C9munication.Size = new System.Drawing.Size(46, 40);
             this.C9munication.TabIndex = 5;
             this.C9munication.UseVisualStyleBackColor = true;
             this.C9munication.Click += new System.EventHandler(this.C9munication_Click);
@@ -125,9 +125,9 @@ namespace ProAudioSystem
             this.Warning.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Warning.FlatAppearance.BorderSize = 0;
             this.Warning.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Warning.Location = new System.Drawing.Point(528, 79);
+            this.Warning.Location = new System.Drawing.Point(716, 78);
             this.Warning.Name = "Warning";
-            this.Warning.Size = new System.Drawing.Size(66, 56);
+            this.Warning.Size = new System.Drawing.Size(46, 40);
             this.Warning.TabIndex = 6;
             this.Warning.UseVisualStyleBackColor = true;
             this.Warning.Click += new System.EventHandler(this.Warning_Click);
@@ -138,9 +138,9 @@ namespace ProAudioSystem
             this.Alarm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Alarm.FlatAppearance.BorderSize = 0;
             this.Alarm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Alarm.Location = new System.Drawing.Point(624, 79);
+            this.Alarm.Location = new System.Drawing.Point(812, 78);
             this.Alarm.Name = "Alarm";
-            this.Alarm.Size = new System.Drawing.Size(66, 56);
+            this.Alarm.Size = new System.Drawing.Size(46, 40);
             this.Alarm.TabIndex = 7;
             this.Alarm.UseVisualStyleBackColor = true;
             this.Alarm.Click += new System.EventHandler(this.Alarm_Click);
@@ -149,9 +149,9 @@ namespace ProAudioSystem
             // 
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(684, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(1018, 12);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(66, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(107, 92);
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
             // 
@@ -161,7 +161,7 @@ namespace ProAudioSystem
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.Red;
-            this.button8.Location = new System.Drawing.Point(664, 515);
+            this.button8.Location = new System.Drawing.Point(1051, 515);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(74, 29);
             this.button8.TabIndex = 9;
