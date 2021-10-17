@@ -28,5 +28,46 @@ namespace ProAudioSystem
                 Application.Exit();
             }
         }
+
+
+        private void Baby_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Wallet_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Keys_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Car_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void C9munication_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Warning_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Alarm_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
