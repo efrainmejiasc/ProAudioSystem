@@ -48,9 +48,9 @@ namespace ProAudioSystem
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(220, 167);
+            this.pictureBox1.Location = new System.Drawing.Point(77, 158);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(657, 267);
+            this.pictureBox1.Size = new System.Drawing.Size(948, 326);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
