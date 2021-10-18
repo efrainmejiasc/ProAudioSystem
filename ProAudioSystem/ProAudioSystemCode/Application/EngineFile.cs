@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Diagnostics;
 
 namespace ProAudioSystemCode.Application
 {
@@ -47,6 +48,21 @@ namespace ProAudioSystemCode.Application
             return resultado;
         }
 
+        public static bool CreateAndWriteFile(string path, string suceso, string observacion)
+        {
+            var resultado = false;
+            var strLog = "SUCESO: " + suceso + " OBSERVACION: " + observacion + " FECHA: " + DateTime.Now ;
+
+            using (System.IO.StreamWriter file = new System.IO.StreamWriter(path, true))
+            {
+                file.WriteLine(strLog);
+                resultado = true;
+            }
+
+            return resultado;
+        }
+
+
         public static string ReadFile(string path)
         {
             var lines = new List<string>();
@@ -65,6 +81,12 @@ namespace ProAudioSystemCode.Application
             }
 
             return lines[0];
+        }
+
+
+        public static void OpenFileLog(string path)
+        {
+            Process.Start(path);
         }
 
         public void ReadWriteTxt(string pathArchivo)

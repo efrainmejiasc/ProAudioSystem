@@ -48,6 +48,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Interop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\HiNetCloud.Interop.WMPLib.20.7.2.10\lib\net46\Interop.WMPLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
@@ -69,9 +73,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Database1DataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="MainFormApp.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="MainFormApp.cs" />
     <Compile Include="MainFormApp.Designer.cs">
       <DependentUpon>MainFormApp.cs</DependentUpon>
     </Compile>
@@ -136,6 +138,19 @@
     <Folder Include="FormsView\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Audios\AtencionPropietarioDeLaCamioneta.mp3" />
+    <Content Include="Audios\AtencionPropietarioDeLaMoto.mp3" />
+    <Content Include="Audios\AtencionPropietarioDelUber.mp3" />
+    <Content Include="Audios\AtencionPropietarioDelVehiculo.mp3" />
+    <Content Include="Audios\Azul.mp3" />
+    <Content Include="Audios\BilleteraExtraviada.mp3" />
+    <Content Include="Audios\Blanco.mp3" />
+    <Content Include="Audios\FavorLlegarHastaElVehiculo.mp3" />
+    <Content Include="Audios\Gris.mp3" />
+    <Content Include="Audios\ManojoDeLlaves.mp3" />
+    <Content Include="Audios\Nissan.mp3" />
+    <Content Include="Audios\NiñoExtraviado.mp3" />
+    <Content Include="Audios\Toyota.mp3" />
     <Content Include="Database1.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -143,6 +158,17 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

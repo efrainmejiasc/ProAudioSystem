@@ -42,6 +42,7 @@ namespace ProAudioSystemCode
                     {
                         resultado = EngineFile.CreateDirectory(path + @"\WPAS");
                         resultado = EngineFile.CreateAndWriteFile(path + @"\WPAS\wpas.txt", mac);
+                        result = string.Empty;
                     }
                     else
                         result = noPermitido;
@@ -49,7 +50,8 @@ namespace ProAudioSystemCode
                 else if (existeClave && existeCarpeta) // comparacion
                 {
                     var mac = EngineInstall.GetMacAddress();
-                    result = (mac == EngineFile.ReadFile(path + @"\WPAS\wpas.txt")) ? string.Empty : noPermitido;
+                    var macFile = EngineFile.ReadFile(path + @"\WPAS\wpas.txt");
+                    result = (mac == macFile) ? string.Empty : noPermitido;
                 }
             }
             catch(Exception ex)
@@ -59,6 +61,20 @@ namespace ProAudioSystemCode
 
             return result;
         }
-       
+
+
+        public void  EscribirLog(string suceso, string observacion)
+        {
+            var path = Directory.GetCurrentDirectory() + @"\WPAS";
+            EngineFile.CreateDirectory(path);
+            EngineFile.CreateAndWriteFile(path + @"\logwpas.txt", suceso, observacion);
+        }
+
+        public void AbrirAchivoLog()
+        {
+            var path = Directory.GetCurrentDirectory() + @"\WPAS\logwpas.txt";
+            EngineFile.OpenFileLog(path);
+        }
+
     }
 }
